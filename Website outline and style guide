@@ -1,0 +1,112 @@
+
+*Project Summary *
+
+**Go Charge** is a cloud-hosted, WordPress-based landing page for a future-facing EV charging platform. It was built on an EC2 instance using Ubuntu, Nginx, and the Astra theme. The site uses HTTPS (Let’s Encrypt), DNS (Namecheap), and includes a contact form via Gutena Forms.
+
+
+Theme and Layout Design (Astra + Custom Gutenberg Blocks)
+
+This site uses the **Astra theme** and the **Gutenberg block editor** for a clean and responsive layout.
+
+
+* 1. HERO SECTION
+
+* **Cover Block / Group Block**
+* Background: `#F0F8FF` (Light Blue)
+* **H1:** "Charge Smart. Drive Clean. Stay Connected." (`#008000`, 40px)
+* Paragraph (centered, 18px)
+* Button: `Get Started` (Green `#008000`, white text, rounded)
+
+
+*3. FEATURES
+
+* **Group Block** with 3-column layout
+* Background: `#F9F9F9`
+* Each column has:
+
+  * Emoji/Icon
+  * Heading (24px)
+  * Text (16px)
+
+**Examples:**
+
+* Real-Time Monitoring
+* Flexible Pricing
+* Smart Access
+* Open & Compatible
+* Secure & Sustainable
+
+---
+
+* 4. SOLUTIONS SECTION
+
+* **Two Column Layout**
+  **Left: Drivers**
+*  Book chargers
+* Get alerts
+*  Mobile payment
+*  Rewards
+
+**Right: Businesses**
+
+*  Manage stations
+*  Set tariffs
+* View reports
+*  After-hours access
+
+---
+
+*ABOUT GO CHARGE*
+
+* **Heading + Paragraph Block**
+  **Text:**
+
+> Go Charge is a smart EV charging software platform built to simplify electric mobility. We connect drivers, businesses, and property managers with real-time station monitoring, flexible pricing tools, and user-first interfaces.
+
+* Core Values Icons: Simplicity, Sustainability, Scalability, Connectivity
+
+---
+
+*SUSTAINABILITY MISSION*
+
+* **Group Block** with light green background `#E0FFE0`
+* **Text:**
+
+> We believe that access to clean, convenient electric vehicle charging is essential for a greener future. Go Charge empowers users and communities to reduce emissions and support sustainability through smarter energy tools.
+
+
+
+*7. CONTACT FORM*
+
+* **Plugin:** Gutena Forms
+* Fields: Name, Email, Message
+* Submit Button: Green background `#008000`, white text, 8px radius
+* Centered, max-width 600px, 60px padding top/bottom
+
+
+
+*FOOTER*
+
+```text
+© 2025 Go Charge. All rights reserved.  
+Built on AWS EC2 | Powered by WordPress | Designed for the Future
+```
+
+
+*Design Settings Summary
+
+| Element        | Font           | Size                                | Color              |
+| -------------- | -------------- | ----------------------------------- | ------------------ |
+| Headings       | Poppins        | 24–40px                             | #333333            |
+| Body Text      | Open Sans      | 16px                                | #333333            |
+| Primary Button | Open Sans Bold | 16px                                | #FFFFFF on #008000 |
+| Background     | Group-based    | White / #F0F8FF / #F9F9F9 / #E0FFE0 |                    |
+
+
+*Contact Form (Gutena Forms)*
+
+* Installed from **Plugins > Add New > Gutena Forms**
+* Anti-spam protection enabled
+* Styled to match site palette
+
+
