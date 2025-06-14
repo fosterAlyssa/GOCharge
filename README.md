@@ -53,7 +53,20 @@ Example snippet:
 All front-end design was created using the **WordPress Block Editor** for modular responsiveness.
 
 ---
+## Domain & IP Configuration
 
+The domain name **gocharge.ink** was purchased via [Namecheap](https://www.namecheap.com), and DNS settings were configured to point to the public EC2 IP address using **A records**:
+
+- **Domain**: `gocharge.ink`
+- **Registrar**: Namecheap  
+- **Server IP**: `3.107.197.127`  
+- **DNS A Records**:
+  - `@` → `3.107.197.127`
+  - `www` → `3.107.197.127`
+
+This setup ensures that both `gocharge.ink` and `www.gocharge.ink` direct traffic to the same EC2 instance running the GoCharge WordPress platform.
+
+---
 ## SSL Setup (HTTPS)
 
 GoCharge uses **Let’s Encrypt** via **Certbot**:
@@ -139,4 +152,6 @@ Based on [Ali Hamza’s WordPress on Ubuntu 22.04 Guide](https://medium.com/@ali
 Hamza, A. (2022, September 26). How to install WordPress and deploy your website on Ubuntu 22.04. Medium. https://medium.com/@ali_hamza/how-to-install-wordpress-and-deploy-your-website-on-ubuntu-22-04-0a83654b7306
 
 SiteGround. (n.d.). How to change the WordPress directory. SiteGround Knowledge Base. https://au.siteground.com/kb/change-wordpress-directory/
+
+Namecheap. (n.d.). Domain control panel: Advanced DNS for gocharge.ink. Namecheap. https://ap.www.namecheap.com/Domains/DomainControlPanel/gocharge.ink/advancedns
 
