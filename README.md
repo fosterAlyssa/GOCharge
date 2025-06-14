@@ -13,6 +13,12 @@ Live Site: [https://gocharge.ink](https://gocharge.ink)
 
 IP Adress: 3.107.197.127
 
+## Video Explainer 
+
+
+https://github.com/user-attachments/assets/fdc14928-443c-40bb-9070-4172c3e658c2 
+
+
 ## Project Overview
 
 This repository contains the deployment process, website code, and configuration for **GoCharge**, a WordPress-based EV charging platform, hosted on AWS EC2 using Apache and SSL via Let's Encrypt.
