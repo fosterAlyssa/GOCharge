@@ -4,8 +4,11 @@
 ## Author
 
 **Alyssa Foster**  
+
 Student Project — ICT171 
+
 Student Number - 35250097
+
 Live Site: [https://gocharge.ink](https://gocharge.ink)
 
 ## Project Overview
