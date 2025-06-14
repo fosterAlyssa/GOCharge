@@ -1,18 +1,25 @@
 
 # GoCharge Cloud Server Project
 
-## 🚗 Project Overview
+## Author
+
+**Alyssa Foster**  
+Student Project — ICT171 
+Student Number - 35250097
+Live Site: [https://gocharge.ink](https://gocharge.ink)
+
+## Project Overview
 
 This repository contains the deployment process, website code, and configuration for **GoCharge**, a WordPress-based EV charging platform, hosted on AWS EC2 using Apache and SSL via Let's Encrypt.
 
 ---
 
-## 🌐 Homepage & Website Design
+## Homepage & Website Design
 
 The GoCharge website is built using **WordPress (6.x)** with:
 
-- ✅ **Theme Used**: `Carbon Agency` (customised via the Astra block system)
-- ✅ **Plugin Highlighted**: `Forminator` — used to manage the contact form  
+- **Theme Used**: `Carbon Agency` (customised via the Astra block system)
+- **Plugin Highlighted**: `Forminator` — used to manage the contact form  
 
 Example:
 ```html
@@ -23,7 +30,7 @@ Example:
 
 ---
 
-## 🖼️ Front-End Code Highlights
+## Front-End Code Highlights
 
 The design uses **Gutenberg blocks** and pre-styled layout elements including:
 
@@ -44,7 +51,7 @@ All front-end design was created using the **WordPress Block Editor** for modula
 
 ---
 
-## 🔐 SSL Setup (HTTPS)
+## SSL Setup (HTTPS)
 
 GoCharge uses **Let’s Encrypt** via **Certbot**:
 
@@ -58,14 +65,14 @@ Certbot automatically:
 - Configures Apache for HTTPS
 - Sets up auto-renewal
 
-💡 Check renewal:
+Check renewal:
 ```bash
 sudo certbot renew --dry-run
 ```
 
 ---
 
-## 🗂️ WordPress Directory Management
+## WordPress Directory Management
 
 WordPress was moved to `/wordpress` using [SiteGround’s guide](https://au.siteground.com/kb/change-wordpress-directory/):
 
@@ -83,7 +90,7 @@ require( dirname( __FILE__ ) . '/wordpress/wp-blog-header.php' );
 
 ---
 
-## 🚀 Deployment Reference
+## Deployment Reference
 
 Based on [Ali Hamza’s WordPress on Ubuntu 22.04 Guide](https://medium.com/@ali_hamza/how-to-install-wordpress-and-deploy-your-website-on-ubuntu-22-04-0a83654b7306):
 
@@ -94,23 +101,39 @@ Based on [Ali Hamza’s WordPress on Ubuntu 22.04 Guide](https://medium.com/@ali
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
+
+```plaintext
+/var/www/html/
+├── index.php                    ← Root file that redirects to WordPress
+└── wordpress/
+    ├── index.php
+    ├── license.txt
+    ├── readme.html
+    ├── wp-activate.php
+    ├── wp-admin/               ← WordPress admin dashboard
+    ├── wp-blog-header.php
+    ├── wp-comments-post.php
+    ├── wp-config.php           ← Your database config
+    ├── wp-config-sample.php
+    ├── wp-content/             ← Themes, plugins, media uploads
+    ├── wp-cron.php
+    ├── wp-includes/            ← Core WordPress code
+    ├── wp-links-opml.php
+    ├── wp-load.php
+    ├── wp-login.php
+    ├── wp-mail.php
+    ├── wp-settings.php
+    ├── wp-signup.php
+    ├── wp-trackback.php
+    └── xmlrpc.php
+
 
 ```
-/
-├── wordpress/                 # WordPress files
-│   ├── wp-content/
-│   ├── wp-config.php
-│   └── ...
-├── .htaccess                  # Copied from /wordpress/.htaccess
-├── index.php                 # Modified to point to /wordpress
-└── README.md
-```
-
 ---
+**References**
 
-## 👩‍💻 Author
+Hamza, A. (2022, September 26). How to install WordPress and deploy your website on Ubuntu 22.04. Medium. https://medium.com/@ali_hamza/how-to-install-wordpress-and-deploy-your-website-on-ubuntu-22-04-0a83654b7306
 
-**Alyssa Foster**  
-Student Project — ICT171  
-Live Site: [https://gocharge.ink](https://gocharge.ink)
+SiteGround. (n.d.). How to change the WordPress directory. SiteGround Knowledge Base. https://au.siteground.com/kb/change-wordpress-directory/
+
